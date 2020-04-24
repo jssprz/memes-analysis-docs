@@ -101,8 +101,77 @@
           <div role="main">
             <div class="section">
               
-                <h1 id="download">Download</h1>
-<p>v 1.0 <a href="https://s06.imfd.cl/04/twitter/media/data.tar.gz">.tar.gz</a></p>
+                <h1 id="overview">Overview</h1>
+<p><strong>SemanticMemes</strong> is a large dataset of textually described memes in Spanish. To build this dataset, we are collecting all Chilean tweets with images posted from May 10th, 2019 until now. For the current version of the dataset, four experts manually classified a subset of 52,000 images. These experts were trained until they reached an inter-coder reliability (ICR) of 90% or above, and a Krippendorff's alpha of .7 or above. ICR was calculated on a subsample of 2,000 images not included in the final sample of 52,000 cases. Each expert classified 13,000 different images into four classes: <em>Meme</em>, <em>Non-meme</em>, <em>Sticker</em>, and <em>Doubtful</em>. Also, for images classified as <em>Memes</em> and <em>Stickers</em>, the experts transcribed the text in the image, provided a description of the contents in the image (subjects, places, colors, actions, etc.), and a semantic interpretation of the context and situation showed.</p>
+<h1 id="statistics">Statistics</h1>
+<p>Total images: <strong>52K</strong></p>
+<ul>
+<li>
+<p>Meme: <strong>1,194</strong></p>
+</li>
+<li>
+<p>Sticker: <strong>1,443</strong></p>
+</li>
+<li>
+<p>No-meme: <strong>49,347</strong></p>
+</li>
+<li>
+<p>Doubtful: <strong>16</strong></p>
+</li>
+</ul>
+<p>Spanish Vocabulary: <strong>8,669</strong> words</p>
+<h1 id="example">Example</h1>
+<p><img alt="Sample" src="../img/1135624892051808256_D8KM0pDW4AAu8hK.jpg" /></p>
+<h5 id="expert-1">Expert 1:</h5>
+<ul>
+<li>
+<p><strong>Text in Meme</strong>: chupala temblor culiao</p>
+</li>
+<li>
+<p><strong>Visual Description</strong>: hombre levantando el dedo del medio al cielo</p>
+</li>
+<li>
+<p><strong>Semantic Description</strong>: los chilenos acostumbrados a la actividad sismica no los asusta un temblor de 6 o menos, por lo que solo paralizaran sus actividades con uno de 7 o mas.</p>
+</li>
+</ul>
+<h5 id="expert-2">Expert 2:</h5>
+<ul>
+<li>
+<p><strong>Text in Meme</strong>: ¡Chúpala temblor culiao! Por menos de 7 Ritcher no me levanto.</p>
+</li>
+<li>
+<p><strong>Visual Description</strong>: Hombre haciendo un gesto obsceno con su mano. Junto a un él un oso de peluche.</p>
+</li>
+<li>
+<p><strong>Semantic Description</strong>: Burla dirigida a la actitud que tienen algunos chilenos frente a los temblores: salvo que sea muy fuerte, no se levantan. El meme acude a una escena de la pelícua "Ted" para gráficar la situación.</p>
+</li>
+</ul>
+<h1 id="download">Download</h1>
+<ul>
+<li><em>v 1.0</em> <a href="https://s06.imfd.cl/04/twitter/media/data.tar.gz">.tar.gz</a></li>
+</ul>
+<h1 id="files">Files</h1>
+<h2 id="splits">Splits</h2>
+<ul>
+<li><a href="https://s06.imfd.cl/04/twitter/media/MemesDataSet/datainfo.json">datainfo.json</a></li>
+</ul>
+<h2 id="features">Features</h2>
+<ul>
+<li><strong>CNN</strong> <em>ResNet-152</em> <a href="https://s06.imfd.cl/04/twitter/media/MemesDataSet/resnet_features.hdf5">resnet_features.hdf5</a> (425MB)</li>
+<li><strong>HOG</strong> <a href="https://s06.imfd.cl/04/twitter/media/MemesDataSet/features.hdf5">features.hdf5</a> (26MB)</li>
+</ul>
+<h1 id="citing-the-dataset">Citing the Dataset</h1>
+<pre><code>@inproceedings{PerezMartin20ica,
+               author = {Jesus Perez-Martin and Benjamin Bustos and Magdalena Saldana}
+               title = {Semantic Search of Memes on Twitter},
+               booktitle = {International Communication Association (ICA)},
+               year = {2020},
+               month = {May}
+}
+</code></pre>
+
+<h2 id="conctact">Conctact</h2>
+<p><a href="" title="mailto:jeperez@dcc.uchile.cl">jeperez at dcc.uchile.cl</a></p>
               
             </div>
           </div>
